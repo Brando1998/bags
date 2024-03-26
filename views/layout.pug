@@ -1,0 +1,14 @@
+//- layout.pug
+html
+  head
+    title My Site - #{pagetitle}
+    block scripts
+      script(src='/index.js')
+    block styles 
+      link(rel="stylesheet", href="/public/stylesheets/bootstrap.min.css")
+      link(rel="stylesheet", href="stylesheets/style.css")
+  body(class="custom-dark-blue")
+    block content
+    block foot
+      #footer
+        p some footer content

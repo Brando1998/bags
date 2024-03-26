@@ -1,0 +1,29 @@
+FROM alpine:3.18
+
+ENV NODE_VERSION 21.6.2
+
+# Set work directory
+WORKDIR /usr/src/app
+
+# Globals
+RUN apk add npm
+RUN npm install -g gulp-cli
+RUN npm install --save-dev gulp
+RUN npm install --save-dev gulp-sass
+RUN npm install --save-dev gulp-ejs gulp-rename
+RUN npm install --save-dev gulp-eslint
+RUN npm install --save-dev gulp-mocha gulp-data mocha supertest
+RUN npm install --save-dev browser-sync
+
+#   En caso de disponer de un package.json, solo habrá que copiarlo y decirle que se instale su contenido.
+
+
+
+# Local
+# RUN gulp css
+# RUN gulp html
+# RUN gulp lint
+# RUN gulp test
+# RUN gulp watch
+# RUN gulp sync
+

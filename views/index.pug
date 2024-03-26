@@ -1,0 +1,94 @@
+extends layout.pug
+
+block scripts
+  script(src='/index.js')
+
+block content
+    main(class="container text-white")
+        div(class="row pt-5")
+            div(class="col-12 col-lg-6")
+                div(class="pt-5 ps-5 fixed-top d-sm-block d-none")
+                    h1(class="fw-bold")="!Hola, me llamo Brando!"
+                    h5="Full stack developer"
+                    h6="Construyendo aplicaciones..."
+                    div(class="d-flex flex-column flex-shrink-0 pe-3 pt-3 pb-3 ps-0" style="width: 280px;")
+                        ul(class="nav nav-pills flex-column mb-auto")
+                            li(class="nav-item") 
+                                a(href="#obout" class="nav-link ps-0 text-white" aria-current="page")="- Acerca de mì"
+                            li(class="nav-item") 
+                                a(href="#xp" class="nav-link ps-0 text-white" aria-current="page")="- Experiencia"
+                            li(class="nav-item") 
+                                a(href="#projects" class="nav-link ps-0 text-white" aria-current="page")="- Proyectos" 
+
+                div(class="d-sm-none d-block")
+                    h1(class="fw-bold")="!Hola, me llamo brando!"
+                    h5="Full stack developer"
+                    h6="Construyendo aplicaciones..."
+                    div(class="d-flex flex-column flex-shrink-0 pe-3 pt-3 pb-3 ps-0" style="width: 280px;")
+                        ul(class="nav nav-pills flex-column mb-auto")
+                            li(class="nav-item") 
+                                a(href="#obout" class="nav-link ps-0" aria-current="page")="- Acerca de mì"
+                            li(class="nav-item") 
+                                a(href="#xp" class="nav-link ps-0" aria-current="page")="- Experiencia"
+                            li(class="nav-item") 
+                                a(href="#projects" class="nav-link ps-0" aria-current="page")="- Proyectos" 
+
+            div(class="col-12 col-lg-6")
+                div(class="overflow-scroll")
+                    h5(class="pt-3" id="obout")="Sobre mì"
+                    p="Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a huge corporation, and a digital product studio. My main focus these days is building accessible user interfaces for our customers at Klaviyo. I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood. In my free time, I've also released an online video course that covers everything you need to know to build a web app with the Spotify API. When I’m not at the computer, I’m usually rock climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for Korok seedsKorok seeds."
+                    h5(class="pt-3" id="xp")="Experiencia"
+                    div(class="card mt-1")
+                        div(class="card-header")
+                            p="Indra 2022-2024"
+                        div(class="card-body")
+                            h5(class="card-title")
+                            p="Desarrollador full-stack"
+                            p="With supporting text below as a natural lead-in to additional content."
+                            a(href="#", class="btn btn-primary")="Ir al sitio web de Indra"
+                        
+                    div(class="card mt-1")
+                        div(class="card-header")
+                            p="Indra 2022-2024"
+                        div(class="card-body")
+                            h5(class="card-title")
+                            p="Desarrollador full-stack"
+                            p="With supporting text below as a natural lead-in to additional content."
+                            a(href="#", class="btn btn-primary")="Ir al sitio web de Indra"
+                    
+                    div(class="card mt-1")
+                        div(class="card-header")
+                            p="Indra 2022-2024"
+                        div(class="card-body")
+                            h5(class="card-title")
+                            p="Desarrollador full-stack"
+                            p="With supporting text below as a natural lead-in to additional content."
+                            a(href="#", class="btn btn-primary")="Ir al sitio web de Indra"
+                    
+                    h5(class="pt-3" id="projects")="Proyectos"
+                    div(class="card mt-1")
+                        div(class="card-header")
+                            p="Indra 2022-2024"
+                        div(class="card-body")
+                            h5(class="card-title")
+                            p="Desarrollador full-stack"
+                            p="With supporting text below as a natural lead-in to additional content."
+                            a(href="#", class="btn btn-primary")="Ir al sitio web de Indra"
+                    
+                    div(class="card mt-1")
+                        div(class="card-header")
+                            p="Indra 2022-2024"
+                        div(class="card-body")
+                            h5(class="card-title")
+                            p="Desarrollador full-stack"
+                            p="With supporting text below as a natural lead-in to additional content."
+                            a(href="#", class="btn btn-primary")="Ir al sitio web de Indra"
+
+                    div(class="card mt-1")
+                        div(class="card-header")
+                            p="Indra 2022-2024"
+                        div(class="card-body")
+                            h5(class="card-title")
+                            p="Desarrollador full-stack"
+                            p="With supporting text below as a natural lead-in to additional content."
+                            a(href="#", class="btn btn-primary")="Ir al sitio web de Indra"

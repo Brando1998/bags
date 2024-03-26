@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  gulp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-gulp
+    command: gulp
+    volumes:
+      - ./bin:/usr/src/app/bin
+      - ./public:/usr/src/app/public
+      - ./routes:/usr/src/app/routes
+      - ./sass:/usr/src/app/sass
+      - ./views:/usr/src/app/views
+      - ./.eslintrc.json:/usr/src/app/.eslintrc.json
+      - ./app.js:/usr/src/app/app.js
+      - ./app.test.js:/usr/src/app/app.test.js
+      - ./gulpfile.js:/usr/src/app/gulpfile.js
+      - ./package.json:/usr/src/app/package.json
+      
+      
+
